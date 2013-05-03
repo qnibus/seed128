@@ -22,6 +22,8 @@ Ready
 <ol>
   <li>위 링크에서 class.seed.php를 다운로드 합니다.</li>
   <li>class.seed.php내 <code>EncRoundKeyUpdate1</code> 함수를 다음과 같이 변경합니다.</li>
+  <li>변경할 class.seed.php 파일을 class.crypto.php 파일과 함께 원하는 곳으로 업로드합니다.</li>
+  <li>class.crypto.php를 include해서 사용하시면 됩니다.</li>
 </ol>
 
 <pre>
@@ -69,8 +71,10 @@ private function EncRoundKeyUpdate1(&$K = array(), &$A, &$B, &$C, &$D, $Z)
 
 ====================
 
-Demo
+<a href="http://lib.qnibus.com/seed128/" target="_blank">Demo</a>
 ====================
+
+아래와 같이 암호화 혹은 복호화를 원하는 곳에 넣어서 사용하세요!
 
 <pre>
 &lt;?php
@@ -81,4 +85,4 @@ echo $crypto->decrypt('856ac21e3960225b3e6bf39b084279312485e58b578de7d1d418f6128
 ?&gt;
 </pre>
 
-Site : <a href="http://lib.qnibus.com/seed128/" target="_blank">http://lib.qnibus.com/seed128/</a>
+
