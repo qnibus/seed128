@@ -1,12 +1,15 @@
 Seed128 + CBC + PKCS5
 ====================
 
-<a href="http://www.kisa.or.kr/" target="_blank">한국인터넷진흥원</a>에서 순수 국내기술로 개발된 암호화 알고리즘을 PHP용으로 전환해 CBC 모드로 운용할 수 있는 클래스를 제공하고자 합니다.
+SEED는 <a href="http://www.kisa.or.kr/" target="_blank">한국인터넷진흥원</a>에서 순수 국내기술로 개발된 암호화 알고리즘입니다.
+이를 PHP용으로 전환해주신 <a href="http://cena.co.kr/mibany" target="_blank">mibany</a>님께 감사드립니다.
+저는 이를 이용해 CBC 모드로 운용할 수 있는 클래스와 64bit 환경에서 작동되도록 업데이트하였습니다.
+검색을 해보니 이렇게 구현하고자 하시는분들이 계시는 것 같은데 공개된 소스코드는 없는 것 같아서 저같이 고생하지 마시라고 공개하오니 요긴하게 사용하시기 바랍니다.
 
 <ul>
     <li>x86/x64 플랫폼 지원</li>
     <li>CBC(Cipher-block chaining 운영모드 지원</li>
-    <li>문자셋 지원</li>
+    <li>EUC-KR, UTF-8 문자셋 지원</li>
 </ul>
 
 ====================
