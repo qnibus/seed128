@@ -71,10 +71,11 @@ private function EncRoundKeyUpdate1(&$K = array(), &$A, &$B, &$C, &$D, $Z)
 
 ====================
 
-<a href="http://lib.qnibus.com/seed128/" target="_blank">Demo</a>
+Demo
 ====================
 
 아래와 같이 암호화 혹은 복호화를 원하는 곳에 넣어서 사용하세요!
+실행 예제는 <a href="http://lib.qnibus.com/seed128/" target="_blank">여기</a>를 클릭하시면 보실 수 있습니다.
 
 <pre>
 &lt;?php
