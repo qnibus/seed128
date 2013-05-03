@@ -8,7 +8,7 @@ SEED는 <a href="http://www.kisa.or.kr/" target="_blank">한국인터넷진흥�
 
 <ul>
     <li>x86/x64 플랫폼 지원</li>
-    <li>CBC(Cipher-block chaining 운영모드 지원</li>
+    <li>CBC(Cipher-block chaining) 운영모드 지원</li>
     <li>EUC-KR, UTF-8 문자셋 지원</li>
 </ul>
 
@@ -21,9 +21,9 @@ Ready
 
 <ol>
   <li>위 링크에서 class.seed.php를 다운로드 합니다.</li>
-  <li>class.seed.php내 <code>EncRoundKeyUpdate1</code> 함수를 다음과 같이 변경합니다.</li>
-  <li>변경할 class.seed.php 파일을 class.crypto.php 파일과 함께 원하는 곳으로 업로드합니다.</li>
-  <li>class.crypto.php를 include해서 사용하시면 됩니다.</li>
+  <li><code>class.seed.php</code>내 <code>EncRoundKeyUpdate1</code> 함수를 다음과 같이 변경합니다.</li>
+  <li>변경할 <code>class.seed.php</code> 파일을 <code>class.crypto.php</code> 파일과 함께 원하는 곳으로 업로드합니다.</li>
+  <li><code>class.crypto.php</code>를 <code>include</code>해서 사용하시면 됩니다.</li>
 </ol>
 
 <pre>
