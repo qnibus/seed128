@@ -129,7 +129,8 @@ class Crypto
 			$this->arraycopy($cipherBlockBytes, 0, $cbcBlockBytes, 0, $this->block); // 다음 블록에서 사용할 CBC블록을 암호 블록으로 대치
 			$start += $this->block; // 다음블록의 시작 위치 계산
 		}
-		return iconv($this->innerEncoding, $this->serverEncoding, call_user_func_array("pack", array_merge(array("c*"), $planBytes))); // 평문블록 바이트 배열을 문자열로 변환
+		$rst = iconv($this->innerEncoding, $this->serverEncoding, call_user_func_array("pack", array_merge(array("c*"), $planBytes))); // 평문블록 바이트 배열을 문자열로 변환
+		return $this->pkcs5Unpad($rst); // 패딩처리해서 반환
 	}
 
 	/**
