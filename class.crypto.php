@@ -306,9 +306,9 @@ class Crypto
     {  
         $pad = ord ( $text {strlen ( $text ) - 1} );  
         if ($pad > strlen ( $text ))  
-            return false;  
+            return $text;  
         if (strspn ( $text, chr ( $pad ), strlen ( $text ) - $pad ) != $pad)  
-            return false;  
+            return $text;  
         return substr ( $text, 0, - 1 * $pad );  
     }
 }
